@@ -7,7 +7,7 @@ app.use(cors())
 require('dotenv').config()
 
 let db,
-    dbConnectionSrt = "mongodb+srv://letrongdu:chudu@cluster0.spxu9rj.mongodb.net/?retryWrites=true&w=majority",
+    dbConnectionSrt = "mongodb+srv://letrongdu:chudu@cluster0.spxu9rj.mongodb.net/?retryWrites=true&w=majority?directConnection=true",
     dbName = 'todo'
 
 MongoClient.connect(dbConnectionSrt, { useUnifiedTopology: true })
